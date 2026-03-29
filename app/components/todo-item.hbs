@@ -1,0 +1,9 @@
+<div class="todo-item {{if @todo.completed "completed"}}">
+  <button type="button" class="todo-text" {{on "click" this.toggle}}>
+    {{@todo.text}}
+  </button>
+
+  <button class="delete-btn" type="button" {{on "click" this.delete}}>
+    ✕
+  </button>
+</div>

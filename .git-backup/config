@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "emberjs-todo"]
+	url = https://github.com/nkchaudhary/emberjs-todo.git
+	fetch = +refs/heads/*:refs/remotes/emberjs-todo/*
+[branch "main"]
+	remote = emberjs-todo
+	merge = refs/heads/main
+	vscode-merge-base = emberjs-todo/main

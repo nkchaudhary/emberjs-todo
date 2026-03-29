@@ -1,0 +1,15 @@
+<div class="app-container">
+  <h1>📝 My Todo App</h1>
+
+  <TodoInput @onAdd={{this.addTodo}} />
+
+  <div class="todo-list">
+    {{#each this.todos as |todo|}}
+      <TodoItem
+        @todo={{todo}}
+        @onToggle={{this.toggleTodo}}
+        @onDelete={{this.deleteTodo}}
+      />
+    {{/each}}
+  </div>
+</div>

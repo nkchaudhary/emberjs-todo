@@ -1,0 +1,12 @@
+<div class="todo-input">
+  <label for="new-todo" class="visually-hidden">New task</label>
+  <input
+    id="new-todo"
+    type="text"
+    placeholder="Add a new task..."
+    value={{this.text}}
+    {{on "input" this.updateText}}
+  />
+
+  <button type="button" {{on "click" this.addTodo}}>Add</button>
+</div>
